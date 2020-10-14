@@ -150,7 +150,7 @@ public class Packager {
         );
 
         // sort the valid packages of that line by price desc, weight asc, amount of items in package desc
-        // we use amount of items in package desc if the price and weight es the same so we have the package withe the most items if price and weight is equal
+        // we use amount of items in package desc if the price and weight is the same so we have the package with the most items if price and weight is equal
         allPackedPacketsOfLine.sort(Packet.PackageItemComparatorPriceDescAndWeightAscAndAmountOfItemsInPacketDesc);
 
         if (allPackedPacketsOfLine.size() > 0) {
